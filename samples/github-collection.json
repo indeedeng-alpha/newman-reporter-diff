@@ -1,0 +1,31 @@
+{
+	"info": {},
+	"item": [
+		{
+			"name": "Sample GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"protocol": "https",
+					"host": "api.github.com",
+					"path": "repos/postmanlabs/newman"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sample GET2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"protocol": "https",
+					"host": "api.github.com",
+					"path": "repos/postmanlabs/postman-docs"
+				}
+			},
+			"response": []
+		}
+	]
+}

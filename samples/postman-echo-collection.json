@@ -1,0 +1,32 @@
+{
+	"variable": [
+		{
+			"id": "newman-diff:ignoredHeadersList",
+			"value": [
+				"cookie"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Sample GET",
+			"method": "POST",
+			"request": {
+				"url": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+				"header": "Example: x",
+				"body": "{\"Sample\": 1234}"
+			},
+			"response": []
+		},
+		{
+			"name": "Sample GET2",
+			"method": "POST",
+			"request": {
+				"url": "https://postman-echo.com/get?foo1=bar1&foo2=bar5",
+				"header": "Example: y",
+				"body": "{\"Sample\": 4321}"
+			},
+			"response": []
+		}
+	]
+}
