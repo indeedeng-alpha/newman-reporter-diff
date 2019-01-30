@@ -44,8 +44,8 @@ yields:
     +     "foo2": "bar5"
         },
     ...
-  }
-{code}
+    }
+    {code}
 
 
 ## Prerequisites
@@ -64,7 +64,7 @@ In the project folder, run
 
 Run without publishing
 
-     NODE_PATH=..:./node_modules npm run newman -- run samples/github-collection.json -r diff
+    NODE_PATH=..:./node_modules npm run newman -- run samples/github-collection.json -r diff
 
 Run newman directly (for experimentation)
 
@@ -107,7 +107,7 @@ Likely usage patterns are:
 * Copy the repository, rename it to something like newman-reporter-mydiffy and run using newman -r mydiffy
 * Create a new repository extending this repository to add features.
 
-To depend on this repository can be done by subclassing Reporter and AbstractItemDiffer, then overwrite methods.
+Depending on this repository without chaning the source can be done by subclassing Reporter and AbstractItemDiffer, then overwrite methods.
 For that, create a project with an index.js/ts like this:
 
     // The module.export must be exported like this for newman to successfully load the reporter.

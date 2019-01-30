@@ -80,7 +80,7 @@ export function handleNewmanSummary(summary: newman.NewmanRunSummary, reporter: 
      */
     const items = summary.run.executions.map((execution : any) => itemFromExecution(execution as NewmanExecutionWithRequestResponse));
 
-    // Hack: assume report has comparison pairs only (could be implemented using iteration metadata in summary)
+    // For now, assume report has comparison pairs only (could be implemented using iteration metadata in summary)
     const comparisonSetSize = 2;
 
     const ignoredHeadersList = getNewmanDiffOptionFromVariables(summary.collection.variables, "ignoredHeadersList");
